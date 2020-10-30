@@ -10,7 +10,7 @@
 //
 // NOTE: you do _not_ need to install axios as it's included in the HTML via script element
 const trending = document.querySelector('.topics');
-
+import axios from 'axios'
 axios.get('https://lambda-times-api.herokuapp.com/topics')
     .then(res => {
         const topics = res.data.topics;
